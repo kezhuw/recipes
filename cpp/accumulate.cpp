@@ -36,6 +36,7 @@ void test(std::initializer_list<ValueType>&& values) {
  
 int
 main() {
+	test<int>(std::vector<int>{});
 	test<int>({1, 2, 3, 4});
 	test<int>(std::vector<int>{2,2,3});
 	test<double>({1.1, 1.2, 1.3});
